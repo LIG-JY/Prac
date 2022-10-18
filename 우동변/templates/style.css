@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+fieldset {
+    width: 1000px;
+    padding: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    border: 5px solid palevioletred;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- Bootstrap v5.0 불러오기 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<head>
+<meta charset="utf-8">
+<title>우리 동네 변호사,담당 공무원 조회 </title>
+</head>
+
+<body>
+<!-- stylesheet 적용 style.css 적용 -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<fieldset>
+							<legend class="blind">지역 (시/도 , 시/군/구, 읍/면/동 ) 검색</legend>
+								<input type="hidden" name="type" value="">
+								<input type="hidden" name="searchType" value="">
+								<input type="hidden" name="currentPage" value="1">
+								<input type="hidden" name="countPerPage" value="10">
+
+								<div class="inbox">
+									<label for="city1">지역선택</label>
+                  <div class="d-grid gap-3">
+                    <!-- 시/도 -->
+                    <div class="p-2 bg-light border">
+                      <div class="col">
+										<select id="city1" name="city1" title="시/도선택" onchange="javascript:changeAreaList(1, this);" class="select">
+								    		<option value="">:: 시/도 ::</option>
+
+												<option value="11" title="서울특별시" selected="selected">
+												서울특별시</option>
+
+												<option value="26" title="부산광역시">
+												부산광역시</option>
+
+												<option value="27" title="대구광역시">
+												대구광역시</option>
+
+												<option value="28" title="인천광역시">
+												인천광역시</option>
+
+												<option value="29" title="광주광역시">
+												광주광역시</option>
+
+												<option value="30" title="대전광역시">
+												대전광역시</option>
+
+												<option value="31" title="울산광역시">
+												울산광역시</option>
+
+												<option value="36" title="세종특별자치시">
+												세종특별자치시</option>
+
+												<option value="41" title="경기도">
+												경기도</option>
+
+												<option value="42" title="강원도">
+												강원도</option>
+
+												<option value="43" title="충청북도">
+												충청북도</option>
+
+												<option value="44" title="충청남도">
+												충청남도</option>
+
+												<option value="45" title="전라북도">
+												전라북도</option>
+
+												<option value="46" title="전라남도">
+												전라남도</option>
+
+												<option value="47" title="경상북도">
+												경상북도</option>
+
+												<option value="48" title="경상남도">
+												경상남도</option>
+
+												<option value="50" title="제주특별자치도">
+												제주특별자치도</option>
+
+								    	</select>
+									</div>
+                    </div>
+                    <!-- 시/군/구 -->
+                    <div class="p-2 bg-light border">
+                      <div class="col">
+												<select id="county1" name="county1" title="시/군/구선택" onchange="javascript:changeAreaList(1, this);" class="select">
+									    			<option value="">:: 시/군/구 ::</option>
+
+														<option value="680" selected="selected">강남구</option>
+
+														<option value="740">강동구</option>
+
+														<option value="305">강북구</option>
+
+														<option value="500">강서구</option>
+
+														<option value="620">관악구</option>
+
+														<option value="215">광진구</option>
+
+														<option value="530">구로구</option>
+
+														<option value="545">금천구</option>
+
+														<option value="350">노원구</option>
+
+														<option value="320">도봉구</option>
+
+														<option value="230">동대문구</option>
+
+														<option value="590">동작구</option>
+
+														<option value="440">마포구</option>
+
+														<option value="410">서대문구</option>
+
+														<option value="650">서초구</option>
+
+														<option value="200">성동구</option>
+
+														<option value="290">성북구</option>
+
+														<option value="710">송파구</option>
+
+														<option value="470">양천구</option>
+
+														<option value="560">영등포구</option>
+
+														<option value="170">용산구</option>
+
+														<option value="380">은평구</option>
+
+														<option value="110">종로구</option>
+
+														<option value="140">중구</option>
+
+														<option value="260">중랑구</option>
+
+										    	</select>
+									</div>
+                    </div>
+                    <!-- 읍/면/동 -->
+                    <div class="p-2 bg-light border">
+                      <div class="col col_last">
+										<select id="town1" name="town1" title="읍/면/동 선택" class="select">
+								    		<option value="">:: 읍/면/동 ::</option>
+
+												<option value="103">개포동</option>
+
+												<option value="108">논현동</option>
+
+												<option value="106">대치동</option>
+
+												<option value="118">도곡동</option>
+
+												<option value="105">삼성동</option>
+
+												<option value="111">세곡동</option>
+
+												<option value="115">수서동</option>
+
+												<option value="107">신사동</option>
+
+												<option value="110">압구정동</option>
+
+												<option value="101">역삼동</option>
+
+												<option value="113">율현동</option>
+
+												<option value="114">일원동</option>
+
+												<option value="112">자곡동</option>
+
+												<option value="104">청담동</option>
+
+										</select>
+									</div>
+                    </div>
+                    <!-- 검색 버튼 -->
+                    <div class="p-2 bg-light border">
+                      <div class="inbox last">
+									<button onclick="javascript:search('search');" type="button" id="btn_search" title="검색">검색</button>
+								</div>
+                    </div>
+                  </div>
+								</div>
+							</fieldset>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
