@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class UdbConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'UDB'
+    name = 'UDB_app'

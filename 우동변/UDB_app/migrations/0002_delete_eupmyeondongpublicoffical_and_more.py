@@ -7,7 +7,7 @@ import phonenumber_field.modelfields
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('UDB', '0001_initial'),
+        ('UDB_app', '0001_initial'),
     ]
 
     operations = [
