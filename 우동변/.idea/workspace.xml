@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da905388-d709-4fb1-b95d-f4ae0491130c" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UDB_config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UDB_config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +372,7 @@
       <workItem from="1666013222280" duration="1357000" />
       <workItem from="1666080536842" duration="12816000" />
       <workItem from="1666609754613" duration="700000" />
-      <workItem from="1666699615609" duration="36134000" />
+      <workItem from="1666699615609" duration="37063000" />
     </task>
     <servers />
   </component>
