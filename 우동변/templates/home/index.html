@@ -25,7 +25,7 @@
                       <!-- 시/도 -->
                       <div class="p-2 bg-light border">
                         <div class="col">
-  										<select id="city1" name="city1" title="시/도선택" onchange="javascript:changeAreaList(1, this);" class="select">
+  										<select id="city1" name="city1" title="시/도선택" onchange="javascript:changeAreaList(1, this);" class="select" >
   								    		<option value="">:: 시/도 ::</option>
 
   												<option value="11" title="서울특별시" selected="selected">
@@ -86,6 +86,7 @@
                       <!-- 시/군/구 -->
                       <div class="p-2 bg-light border">
                         <div class="col">
+                            <form method="get" action="" class="form">
   												<select id="county1" name="county1" title="시/군/구선택" onchange="javascript:changeAreaList(1, this);" class="select">
   									    			<option value="">:: 시/군/구 ::</option>
 
