@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da905388-d709-4fb1-b95d-f4ae0491130c" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/UDB_app/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UDB_app/templatetags/custom_location.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UDB_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UDB_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -230,6 +229,7 @@
       <workItem from="1666609754613" duration="700000" />
       <workItem from="1666699615609" duration="43530000" />
       <workItem from="1667286015403" duration="11918000" />
+      <workItem from="1667305868205" duration="9360000" />
     </task>
     <servers />
   </component>
@@ -257,7 +257,7 @@
     <SUITE FILE_PATH="coverage/$settings.coverage" NAME="settings 커버리지 결과" MODIFIED="1665484390114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/우동변" />
     <SUITE FILE_PATH="coverage/$admin.coverage" NAME="admin 커버리지 결과" MODIFIED="1665667361282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB" />
     <SUITE FILE_PATH="coverage/$utils.coverage" NAME="utils 커버리지 결과" MODIFIED="1666880520332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/UDB_project$utils.coverage" NAME="utils 커버리지 결과" MODIFIED="1667290805876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UDB_project$utils.coverage" NAME="utils 커버리지 결과" MODIFIED="1667389691111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UDB_project$views.coverage" NAME="views 커버리지 결과" MODIFIED="1667288224609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB_app" />
     <SUITE FILE_PATH="coverage/$views.coverage" NAME="views 커버리지 결과" MODIFIED="1665464729011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB" />
     <SUITE FILE_PATH="coverage/UDB_project$settings__1_.coverage" NAME="settings (1) 커버리지 결과" MODIFIED="1666876227904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB_project" />
