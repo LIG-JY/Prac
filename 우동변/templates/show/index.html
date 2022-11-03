@@ -22,7 +22,7 @@
                     대전</option>
 
                     {% for city in city_list %}
-                        <option value= 'city{{forloop.counter}}' title="{{city}}">
+                        <option value= '{{city}}' title="{{city}}">
                         {{city}}</option>
                     {% endfor %}
           </select>
@@ -56,5 +56,6 @@
     });
 </script>
 {% endblock javascript %}
+
 
 

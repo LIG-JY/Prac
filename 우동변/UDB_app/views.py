@@ -55,9 +55,10 @@ def show_kangwon(request):  # 강원도만 보여주게
 @csrf_exempt
 def get_counties_ajax(request):
     if request.method == "POST":
-        county_id = request.POST['city_id']  # "강원"
-        context = {'county_id': county_id}
+        city_id = request.POST['cityId']  # "강원"
+        counties = city_county_mapping[city_id]
+        context = {'counties': counties}
         return JsonResponse(context)
-        # return JsonResponse(safe=False)
+
 
 
