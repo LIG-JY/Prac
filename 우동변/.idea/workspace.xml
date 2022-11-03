@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da905388-d709-4fb1-b95d-f4ae0491130c" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/UDB_app/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UDB_app/templatetags/custom_location.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/lawyer_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UDB_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UDB_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UDB_app/templatetags/custom_location.py" beforeDir="false" afterPath="$PROJECT_DIR$/UDB_app/templatetags/custom_location_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UDB_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UDB_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UDB_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UDB_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
       <recent name="$PROJECT_DIR$/Database" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.utils">
+  <component name="RunManager" selected="Python.views">
     <configuration name="admin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UDB_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,6 +105,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lawyer_dao" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="UDB_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Database/lawyer_dao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="settings (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UDB_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,28 +141,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UDB_project/settings.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="UDB_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Database/utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,8 +197,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.utils" />
         <item itemvalue="Python.views" />
+        <item itemvalue="Python.lawyer_dao" />
         <item itemvalue="Python.settings (1)" />
         <item itemvalue="Python.env" />
         <item itemvalue="Python.admin" />
@@ -229,7 +232,9 @@
       <workItem from="1666609754613" duration="700000" />
       <workItem from="1666699615609" duration="43530000" />
       <workItem from="1667286015403" duration="11918000" />
-      <workItem from="1667305868205" duration="9360000" />
+      <workItem from="1667305868205" duration="28150000" />
+      <workItem from="1667472518319" duration="7117000" />
+      <workItem from="1667483761108" duration="1824000" />
     </task>
     <servers />
   </component>
@@ -255,10 +260,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$env.coverage" NAME="env 커버리지 결과" MODIFIED="1665925644476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$settings.coverage" NAME="settings 커버리지 결과" MODIFIED="1665484390114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/우동변" />
+    <SUITE FILE_PATH="coverage/UDB_project$lawyer_dao.coverage" NAME="lawyer_dao 커버리지 결과" MODIFIED="1667464506020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$admin.coverage" NAME="admin 커버리지 결과" MODIFIED="1665667361282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB" />
     <SUITE FILE_PATH="coverage/$utils.coverage" NAME="utils 커버리지 결과" MODIFIED="1666880520332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UDB_project$utils.coverage" NAME="utils 커버리지 결과" MODIFIED="1667389691111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/UDB_project$views.coverage" NAME="views 커버리지 결과" MODIFIED="1667288224609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB_app" />
+    <SUITE FILE_PATH="coverage/UDB_project$views.coverage" NAME="views 커버리지 결과" MODIFIED="1667485568532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB_app" />
     <SUITE FILE_PATH="coverage/$views.coverage" NAME="views 커버리지 결과" MODIFIED="1665464729011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB" />
     <SUITE FILE_PATH="coverage/UDB_project$settings__1_.coverage" NAME="settings (1) 커버리지 결과" MODIFIED="1666876227904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDB_project" />
   </component>

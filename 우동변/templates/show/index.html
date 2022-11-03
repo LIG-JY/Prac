@@ -3,15 +3,58 @@
 <html lang="ko">
 
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"/>
 <title> 우리 동네 변호사,담당 공무원 조회 </title>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> <!--head 부분에 ajax-->
 </head>
 
 <body>
-{% for item in list %}
-    <p>순서: {{ forloop.counter }} </p>
-    <p>{{ item }}</p>
-{% endfor %}
+<select id="city" name="city" title="시/도선택" class="select" >
+                    <option value="" selected="selected">:: 시/도 ::</option>
+
+                    <option value="" title="서울">
+                    서울</option>
+
+                    <option value="" title="광주">
+                    광주</option>
+
+                    <option value="" title="대전">
+                    대전</option>
+
+                    {% for city in city_list %}
+                        <option value= 'city{{forloop.counter}}' title="{{city}}">
+                        {{city}}</option>
+                    {% endfor %}
+          </select>
+
+<select id="county" name="county" title="시/군/구선택" class="select">
+            <option value="" selected="selected">:: 시/군/구 ::</option>
+        </select>
 </body>
 </html>
+
+<!-- body 부분 ajax 코딩 -->
+{% block javascript %}
+<script>
+    $("#city").change(function () {  // city라는 아이디를 통해서 element에 접근했습니다.
+        const cityId = $(this).val();  // 변하면 안 되는 값이라 const ,get the selected city ID from the HTML dropdown list
+        $.ajax({                       // initialize an AJAX request
+            type: "POST",
+            url: '{% url "get_counties_ajax" %}',  // views.py에서 코딩해줘야하는 부분
+            data: {
+                'cityId': cityId,       // add the cityId to the POST parameters
+                'csrfmiddlewaretoken':$('input[name=csrfmiddlewaretoken]').val(),  // 장고 보안관련 코드
+            },
+            success: function (data) {   // `data` is from `get_counties_ajax` view function
+                let html_data = '<option value="">---------</option>';
+                data.forEach(function (data) {
+                    html_data += `<option value="${data}">${data}</option>`
+                });
+                $("#county").html(html_data); // replace the contents of the counties input with the data that came from the server
+            }
+        });
+    });
+</script>
+{% endblock javascript %}
+
 
